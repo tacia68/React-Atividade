@@ -62,29 +62,42 @@ const navbarOptions = [
   }
 ];
 
+// Componente App
 function App() {
-
+  // Definindo o estado "cartItems", que guarda os itens no carrinho de compras
+  // A função "setCartItems" é usada para atualizar esse estado
   const [cartItems, setCartItems] = useState([]);
 
+  // Função para adicionar um item ao carrinho
+  // Ela pega o produto como um argumento e adiciona esse produto ao estado "cartItems"
   const addToCart = (product) => {
     setCartItems([...cartItems, product]);
   };
 
+  // Função para remover um item do carrinho
+  // Ela pega o produto que precisa ser removido como um argumento
+  // E então filtra o estado "cartItems" para criar uma nova lista sem o produto a ser removido
   const removeFromCart = (productToRemove) => {
     setCartItems(cartItems.filter((product) => product !== productToRemove));
   };
+
+  // O que o componente App renderiza
   return (
     <div className="App">
       <header className="App-header">
         {/* Renderiza o componente Navbar com as navbarOptions passadas como propriedade */}
         <Navbar navbarOptions={navbarOptions}/>
+
         {/* Renderiza o componente CardProducts com os cardProductData passados como propriedade */}
-       {/* <CardProducts cardProducts={cardProductData} />*/}
+        {/* Além disso, também passa a função addToCart como prop para que CardProducts possa adicionar itens ao carrinho */}
         <CardProducts cardProducts={cardProductData} addToCart={addToCart} />
+
+        {/* Renderiza o componente Carrinho, passando os itens do carrinho e a função removeFromCart como props */}
         <Carrinho cartItems={cartItems} removeFromCart={removeFromCart} />
       </header>
     </div>
   );
 }
+
 
 export default App;
