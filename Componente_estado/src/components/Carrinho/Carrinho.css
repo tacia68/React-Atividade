@@ -1,0 +1,23 @@
+/* src/components/Carrinho/Carrinho.css */
+
+.cart {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+}
+
+.cart.empty {
+    background-color: #f18f8f; /* Vermelho para carrinho vazio */
+}
+
+.cart.filled {
+    background-color: #8ff18f; /* Verde para carrinho com itens */
+}
+
+.cart img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}

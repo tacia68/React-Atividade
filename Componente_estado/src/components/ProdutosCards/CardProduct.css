@@ -1,0 +1,6 @@
+.product-image {
+  width: 100%; /* Ajusta a largura para se adequar ao contêiner */
+  max-width: 100px; /* Limita a largura máxima para 200px */
+  height: auto; /* Mantém a proporção de aspecto da imagem */
+  max-height: 100px;
+}
