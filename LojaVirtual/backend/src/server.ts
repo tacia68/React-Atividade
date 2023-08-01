@@ -52,11 +52,11 @@ export class Api {
     return this;
   }
   private async middleware() {
-    //NEW CODE - origin deve ter como valor a url do frontend que está consumindo a API
+    //na variavel origin deve ser setado a url da API frontend
     this.server.use(
       cors({ credentials: true, origin: 'http://localhost:3000' }),
     );
-    //***********
+    //### adicionado pelo professor
     this.server.use(express.json());
     this.server.use(cookieParser());
     this.server.use(
