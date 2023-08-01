@@ -1,0 +1,42 @@
+.botaoE {
+    background-color: #f10c2b;
+    font-weight: bold;
+    color: #ECECEC;
+    border-color: #CF8C95;
+}
+
+.botaoI {
+    background-color: #f9fd1c;
+    font-weight: bold;
+    color: #181616;
+    border-color: #CF8C95;
+}
+.botao {
+    background-color: #41db75;
+    font-weight: bold;
+    color: #181616;
+    border-color: #24e412;
+}
+
+.lojaOn{
+    color: #070707;
+    font-weight: bold;
+}
+
+.linha{
+
+    background-color:#fdf1f1;
+}
+
+.linha2{
+    background-color:#f6c8c7;
+}
+
+.loginBt{
+    background-color:#e64b93;
+    border: #CF8C95;
+}
+.font{
+    color: #CF8C95;
+
+}
